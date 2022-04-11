@@ -17,8 +17,8 @@ const Projects: NextPage = () => {
                 title="Fullstack Book App"
                 thumbnail={bookfullstack}
               >
-                En RESTFUL-Api applikation med CRUD operationer gjord för att
-                förbättra min egna kunskap inom React.js och C#.
+                En Fullstack RESTFUL Api med CRUD operationer gjorde med C# &
+                MSSQL som backend och React.js som frontend.
               </CardItem>
             </Section>
             <Section>

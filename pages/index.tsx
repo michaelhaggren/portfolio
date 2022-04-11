@@ -175,8 +175,8 @@ const Home = () => (
             <NextLink href="/projects" scroll={false} passHref>
               <Button
                 rightIcon={<ChevronRightIcon />}
-                bg={useColorModeValue('#141E27', '#f0e7db')}
-                color={useColorModeValue('#f0e7db', '#141E27')}
+                bg={useColorModeValue('#f0e7db', '#141E27')}
+                color={useColorModeValue('#141E27', '#f0e7db')}
               >
                 Mina projekt
               </Button>

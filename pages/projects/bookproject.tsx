@@ -13,7 +13,6 @@ import ArticleLayout from '../../components/ArticleLayout';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Title, WorkImage, Meta } from '../../components/ProjectItem/index';
 import P from '../../components/Paragraph';
-
 const Project = () => (
   <Container h="full" py={8} px={3}>
     <ArticleLayout title="Fullstack Bookapp">
