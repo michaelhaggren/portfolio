@@ -27,7 +27,7 @@ module.exports = {
       animation: {
         menuSlide: 'fadeIn 500ms ease-in-out',
         menuSlideClose: 'fadeOut 500ms ease-in-out',
-        closeSlide: 'opacityFadeIn 500ms ease-in-out',
+        closeSlide: 'opacityFadeIn 200ms ease-in-out',
       },
 
       keyframes: () => ({
