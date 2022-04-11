@@ -68,6 +68,7 @@ export const Header = ({}: HeaderProps) => {
           <Icon boxSize="7" as={HamburgerIcon} />
         </button>
         <Box
+          bg={useColorModeValue('#f0e7db', '#141E27')}
           className={`${showMenu ? '' : 'hidden'}
               z-50 animate-menuSlide md:animate-none shadow-xl md:shadow-none fixed md:sticky top-0 right-0 w-9/12 md:w-auto h-screen md:h-auto  md:flex flex-col md:flex-row  md:ml-auto md:mt-0`}
         >
@@ -93,20 +94,22 @@ export const Header = ({}: HeaderProps) => {
                     toggleMenu();
                     // toggleBlur();
                   }}
-                  className="text-left text-sm  mb:w-auto w-14 hover:border-b ml-6 mt-6 mb-4 md:mr-6 md:mb-0 md:mt-0 md:mx-6 font-montserrat font-bold"
+                  className="text-left text-sm   mb:w-auto w-14 hover:border-b hover:b-black ml-6 mt-6 mb-4 md:mr-6 md:mb-0 md:mt-0 md:mx-6 font-montserrat font-bold"
                 >
                   {path.title}
                 </motion.button>
               </NextLink>
             ))}
-            <motion.a
-              whileTap={{ scale: 0.9 }}
-              className="border-2 hover:border-current  rounded text-sm text-left  px-4 py-2 ml-10 md:ml-4 md:mx-2 transition-colors duration-200 "
-              href="mailto:michael.haggren@gmail.com"
-              rel="noreferrer"
-            >
-              Kontakt
-            </motion.a>
+            <Box className="mt-4 md:mt-0">
+              <motion.a
+                whileTap={{ scale: 0.9 }}
+                className="border-2 hover:border-current rounded mt-4 md:mt-0 text-sm text-left  px-4 py-2 ml-2 md:ml-4 md:mx-2 transition-colors duration-200 "
+                href="mailto:michael.haggren@gmail.com"
+                rel="noreferrer"
+              >
+                Kontakt
+              </motion.a>
+            </Box>
           </ol>
         </Box>
       </Box>

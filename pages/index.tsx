@@ -28,24 +28,28 @@ const Home = () => (
         <Box borderRadius="xl" mb={6} mt={10} p={3} textAlign="center">
           en blivande webbutvecklare med rötterna från de halländska trakterna,
           för närvarande bosatt i{' '}
-          <span className="tracking-widest text-orange-orangePrimary font-semibold">
-            {' '}
-            Borås
-          </span>
+          <Box
+            className="inline-block"
+            color={useColorModeValue('#180A0A', '#ffb612')}
+          >
+            <span className="tracking-widest   font-semibold"> Borås</span>
+          </Box>
         </Box>
+
         <Box>
           <Box className="flex sm:flex-row flex-col ">
-            <Box className="flex flex-col md:px-0 px-2">
+            <Box
+              color={useColorModeValue('#141E27', '#ffb612')}
+              className="flex flex-col md:px-0 px-2"
+            >
               <Heading
-                className="text-orange-orangePrimary tracking-widest flex"
+                className=" tracking-widest flex"
                 as="h1"
                 variant="page-title"
               >
                 michael haggren
               </Heading>
-              <p className="text-orange-orangePrimary opacity-40 tracking-widest">
-                webbutvecklare
-              </p>
+              <p className=" opacity-40 tracking-widest">webbutvecklare</p>
             </Box>
             <Box>
               <Avatar
@@ -90,17 +94,21 @@ const Home = () => (
                 className="flex  mt-2 justify-around gap-4  items-center"
               >
                 <Badge
+                  border="1px"
+                  borderColor={useColorModeValue('#141E27', '#ffb612')}
                   py="2"
                   px="1"
-                  className="border-orange-orangePrimary border text-center"
+                  className=" border text-center"
                   colorScheme="grey"
                 >
                   Next
                 </Badge>
                 <Badge
+                  border="1px"
+                  borderColor={useColorModeValue('#141E27', '#ffb612')}
                   py="2"
                   px="1"
-                  className="border-orange-orangePrimary border text-center"
+                  className="border text-center"
                   colorScheme="grey"
                 >
                   C#
@@ -175,8 +183,8 @@ const Home = () => (
             <NextLink href="/projects" scroll={false} passHref>
               <Button
                 rightIcon={<ChevronRightIcon />}
-                bg={useColorModeValue('#f0e7db', '#141E27')}
-                color={useColorModeValue('#141E27', '#f0e7db')}
+                bg={useColorModeValue('#141E27', '#ffb612')}
+                color={useColorModeValue('#ffb612', '#141E27')}
               >
                 Mina projekt
               </Button>

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 import { CardItem } from '../components/Card';
-import bookfullstack from '../public/images/homepagepng.png';
+import bookfullstack from '../public/images/bookfullstack.png';
 import cryptoApp from '../public/images/cryptoapp.png';
 import Section from '../components/Section';
 const Projects: NextPage = () => {

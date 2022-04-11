@@ -55,7 +55,7 @@ const Project = () => (
       </List>
 
       <SimpleGrid columns={1} gap={4}>
-        <WorkImage src="/images/Homepagepng.png" alt="homepage" />
+        <WorkImage src="/images/homepage.png" alt="homepage" />
         <WorkImage src="/images/bookfullstack.png" alt="add-book-modal" />
         <WorkImage src="/images/addbookmodal.png" alt="add-book-modal" />
       </SimpleGrid>
