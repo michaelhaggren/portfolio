@@ -55,7 +55,7 @@ const Home = () => (
               <Avatar
                 size="2xl"
                 name="Segun Adebayo"
-                src="/images/CVBILD.Jpg"
+                src="/images/CVBILD.png"
               />{' '}
             </Box>
           </Box>
