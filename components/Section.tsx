@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { chakra, shouldForwardProp } from '@chakra-ui/react';
 import { SectionProps } from '../constants';
+
+//* Component for reusable framer motion transition for sections that i want a nice easein transition when that content is presented
 const StyledDiv = chakra(motion.div, {
   shouldForwardProp: (prop) => {
     return shouldForwardProp(prop) || prop === 'transition';

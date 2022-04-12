@@ -7,7 +7,8 @@ const variants = {
   enter: { opacity: 1, x: 0, y: 0 },
   exit: { opacity: 0, x: -0, y: 20 },
 };
-
+//* Layout for reusable layout for card/projects etc, just to make it easier to use, adds
+//* Framer motion smoothness
 const ArticleLayout = ({ children, title }: ArticleLayoutProps) => (
   <motion.article
     initial="hidden"
