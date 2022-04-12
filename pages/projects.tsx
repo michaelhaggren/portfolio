@@ -24,14 +24,14 @@ const Projects: NextPage = () => {
                 thumbnail={bookfullstack}
               >
                 En Fullstack RESTFUL Api med CRUD operationer gjorde med C# &
-                MSSQL som backend och React.js som frontend.
+                MSSQL som backend & React.js som frontend.
               </CardItem>
             </Section>
             <Section>
               <CardItem id="cryptoapp" title="Cryptoapp" thumbnail={cryptoApp}>
                 En enkel applikation där man kan söka på samtliga cryptovalutor,
                 skapad med Next.js då jag var nyfiken på skillnaderna mellan
-                React.js och Next.js.
+                React.js & Next.js.
               </CardItem>
             </Section>
           </SimpleGrid>

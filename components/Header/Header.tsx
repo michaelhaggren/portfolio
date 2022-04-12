@@ -27,7 +27,7 @@ export const Header = ({}: HeaderProps) => {
   //* 3 men blev så rörigt med 2 onödiga sidor för '/kontakt' och '/om mig'
   const links = [
     {
-      title: 'projekt',
+      title: 'Projekt',
       route: '/projects',
     },
   ];
@@ -46,10 +46,12 @@ export const Header = ({}: HeaderProps) => {
             >
               <IconButton
                 variant="unstyled"
-                fill={useColorModeValue('#141E27', '#f0e7db')}
+                fill={useColorModeValue('#121212', '#ffb612')}
                 icon={useColorModeValue(<Logga />, <Logga />)}
-                aria-label="change"
-              ></IconButton>
+                aria-label="Logga"
+              >
+                {' '}
+              </IconButton>
             </motion.button>
           </NextLink>
         </Box>

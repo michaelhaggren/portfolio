@@ -16,20 +16,17 @@ import P from '../../components/Paragraph';
 const Project = () => (
   <Container h="full" py={8} px={3}>
     <ArticleLayout title="Fullstack Bookapp">
-      <Title>
-        Fullstack Bookapp <Badge ml={3}>2021</Badge>
-      </Title>
+      <Title>Fullstack Bookapp</Title>
       <P>
-        Ett av mina första projekt där mitt tålamod verkligen fick testas och
-        många hårstrån fick sätta livet till, vilket lärde mig otroligt mycket.
         En fullstack RESTFUL Api som låter användare lägga till sina
         favoritböcker i en lista och även ge betyg på vad de tyckte om just den
         boken. <br />
         <br /> Det svåraste med detta projekt var att lira mig att hantera{' '}
         <span className="font-bold tracking-wider">state management</span> med
-        redux och att förstå hur detta fungerar rent kodmässigt. Samt att förstå
-        hur modals fungerar i react var också en viss utmaning att klura ut,
-        dock var detta rätt lätt att greppa tillslut.
+        redux och att förstå hur detta fungerar rent kodmässigt. Det var även
+        lite klurigt i början med att förstå hur modals fungerar i react var
+        också en viss utmaning att klura ut, dock var detta rätt lätt att greppa
+        tillslut.
       </P>
 
       <UnorderedList className="opacity-90" my={4}>
@@ -39,14 +36,16 @@ const Project = () => (
 
       <List ml={4} my={4}>
         <ListItem mb={4}>
-          <Meta>Stack</Meta>
-          <span>
-            C#, React.js, MSSQL, Redux, Tailwind, SCSS, Boostrap, Figma{' '}
-          </span>
+          <Badge size="sm" className="mr-4">
+            Tech Stack
+          </Badge>
+          <span>C#, React.js, MSSQL, Redux, Tailwind, SCSS, Figma </span>
         </ListItem>
 
         <ListItem>
-          <Meta>Source</Meta>
+          <Badge size="sm" className="mr-4">
+            Source
+          </Badge>
           <Link href="https://github.com/michaelhaggren/fullstack-bookApp">
             github.com/michaelhaggren/fullstack-bookApp
             <ExternalLinkIcon mx="6px" color="cream" />

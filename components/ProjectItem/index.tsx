@@ -9,7 +9,7 @@ export const Title = ({ children }: TitleProps) => (
     <NextLink href="/projects" passHref>
       <Link>
         <Paragraph className=" w-auto  inline-block y hover:border-b ">
-          projects
+          Projekt
         </Paragraph>
       </Link>
     </NextLink>
