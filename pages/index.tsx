@@ -15,8 +15,8 @@ import Paragraph from '../components/Paragraph';
 import { FaBeer } from 'react-icons/fa';
 import { HiChartBar, HiOutlineCode } from 'react-icons/hi';
 import { GiPianoKeys, GiFoodTruck } from 'react-icons/gi';
+import ProfilBild from '../public/images/CVBIld.png';
 import Head from 'next/head';
-import { motion, MotionConfig } from 'framer-motion';
 const Home = () => (
   <Box>
     <Head>
@@ -57,8 +57,8 @@ const Home = () => (
               <Box>
                 <Avatar
                   size="2xl"
-                  name="Segun Adebayo"
-                  src="/images/CVBILD.png"
+                  name="Michael Haggren"
+                  src="/images/profilbild.png"
                 />{' '}
               </Box>
             </Box>
