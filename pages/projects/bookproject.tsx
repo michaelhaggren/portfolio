@@ -26,8 +26,7 @@ const Project = () => (
           <br /> Det svåraste med detta projekt var att lira mig att hantera{' '}
           <span className='font-bold tracking-wider'>state management</span> med
           redux och att förstå hur detta fungerar rent kodmässigt. Det var även
-          lite klurigt i början med att förstå hur modals fungerar i react dock
-          var detta rätt lätt att greppa tillslut.
+          lite klurigt i början med att förstå hur modals fungerar i react.
         </P>
       </Section>
 
@@ -64,7 +63,7 @@ const Project = () => (
         <SimpleGrid columns={1} gap={4}>
           <WorkImage src='/images/homepage.png' alt='homepage' />
           <WorkImage src='/images/bookfullstack.png' alt='add-book-modal' />
-          <WorkImage src='/images/addbookmodal.png' alt='add-book-modal' />
+          <WorkImage src='/images/AddBookModal.png' alt='add-book-modal' />
         </SimpleGrid>
       </Section>
     </ArticleLayout>
