@@ -51,7 +51,10 @@ const Project = () => (
             <Badge size="sm" className="mr-4">
               Source
             </Badge>
-            <Link href="https://github.com/michaelhaggren/fullstack-bookApp">
+            <Link
+              rel="noreferrer"
+              href="https://github.com/michaelhaggren/fullstack-bookApp"
+            >
               github.com/michaelhaggren/fullstack-bookApp
               <ExternalLinkIcon mx="6px" color="cream" />
             </Link>

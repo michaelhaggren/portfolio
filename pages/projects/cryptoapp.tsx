@@ -47,7 +47,10 @@ const Project = () => (
             <Badge size="sm" className="mr-4">
               Source
             </Badge>
-            <Link href="https://github.com/michaelhaggren/cryptoApp">
+            <Link
+              rel="noreferrer"
+              href="https://github.com/michaelhaggren/cryptoApp"
+            >
               github.com/michaelhaggren/cryptoApp
               <ExternalLinkIcon mx="6px" />
             </Link>
