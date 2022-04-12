@@ -2,7 +2,7 @@ import { Box, Container, useColorModeValue } from '@chakra-ui/react';
 import { useState } from 'react';
 import { Footer } from '../Footer/Footer';
 import { Header } from '../Header/Header';
-//* Mobila responsiva buggar sönder efter grid-area, åtgärda - Klar?
+//* Mobila responsiva buggar sönder efter grid-area, åtgärda
 //TODO Fixa blurr effekt på layout om menyn är aktiv?
 export interface LayoutProps {}
 
