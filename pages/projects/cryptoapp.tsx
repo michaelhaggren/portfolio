@@ -48,6 +48,7 @@ const Project = () => (
               Source
             </Badge>
             <Link
+              target="_blank"
               rel="noreferrer"
               href="https://github.com/michaelhaggren/cryptoApp"
             >
