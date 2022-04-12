@@ -33,18 +33,15 @@ export const Header = ({}: HeaderProps) => {
   ];
   //! VA I HELVETE HÄNDER MED HORKNAPPEN?
   return (
-    <Container maxW="2xl" bg={useColorModeValue('#f0e7db', '#141E27')}>
+    <Container maxW="2xl" bg={useColorModeValue('#f0e7db', '#121212')}>
       <Box className="h-16 px-4 mx-auto md:flex md:items-center">
         <Box className="flex justify-between items-center">
-          <Hide below="md">
-            <ThemeButton />
-          </Hide>
           <NextLink href="/" passHref>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               key={useColorModeValue('light', 'dark')}
-              className="md:sticky fill-mint-mintPrimary fixed left-5 top-7"
+              className="md:static fill-mint-mintPrimary fixed left-5 top-5"
               aria-label="Start"
             >
               <IconButton
@@ -68,7 +65,7 @@ export const Header = ({}: HeaderProps) => {
           <Icon boxSize="7" as={HamburgerIcon} />
         </button>
         <Box
-          bg={useColorModeValue('#f0e7db', '#141E27')}
+          bg={useColorModeValue('#f0e7db', '#121212')}
           className={`${showMenu ? '' : 'hidden'}
               z-50 animate-menuSlide md:animate-none shadow-xl md:shadow-none fixed md:sticky top-0 right-0 w-9/12 md:w-auto h-screen md:h-auto  md:flex flex-col md:flex-row  md:ml-auto md:mt-0`}
         >
@@ -94,13 +91,13 @@ export const Header = ({}: HeaderProps) => {
                     toggleMenu();
                     // toggleBlur();
                   }}
-                  className="text-left text-sm   mb:w-auto w-14 hover:border-b hover:b-black ml-6 mt-6 mb-4 md:mr-6 md:mb-0 md:mt-0 md:mx-6 font-montserrat font-bold"
+                  className="text-left text-sm   mb:w-auto w-14 hover:border-b hover:border-current ml-6 mt-6 mb-4 md:mr-6 md:mb-0 md:mt-0 md:mx-6 font-montserrat font-bold"
                 >
                   {path.title}
                 </motion.button>
               </NextLink>
             ))}
-            <Box className="mt-4 md:mt-0">
+            <Box className="md:mt-0 flex">
               <motion.a
                 whileTap={{ scale: 0.9 }}
                 className="border-2 hover:border-current rounded mt-4 md:mt-0 text-sm text-left  px-4 py-2 ml-2 md:ml-4 md:mx-2 transition-colors duration-200 "
@@ -109,6 +106,9 @@ export const Header = ({}: HeaderProps) => {
               >
                 Kontakt
               </motion.a>
+            </Box>
+            <Box className="flex items-center mt-4 md:mt-0">
+              <ThemeButton />
             </Box>
           </ol>
         </Box>

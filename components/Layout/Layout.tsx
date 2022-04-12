@@ -12,8 +12,8 @@ export const Layout = ({ children }: React.PropsWithChildren<LayoutProps>) => {
     <Box
       as="main"
       pb={8}
-      color={useColorModeValue('#141E27', '#F7F5F2')}
-      bg={useColorModeValue('#f0e7db', '#141E27')}
+      color={useColorModeValue('#121212', '#F7F5F2')}
+      bg={useColorModeValue('#f0e7db', '#121212')}
     >
       <header>
         <Header />
