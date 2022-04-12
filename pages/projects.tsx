@@ -17,7 +17,7 @@ const Projects: NextPage = () => {
         <Heading as="h1">Projekt</Heading>
         <div>
           <SimpleGrid className="mt-10" columns={[1, 1, 2]} gap={6}>
-            <Section>
+            <Section delay="0.3">
               <CardItem
                 id="bookproject"
                 title="Fullstack Book App"
@@ -27,7 +27,7 @@ const Projects: NextPage = () => {
                 MSSQL som backend & React.js som frontend.
               </CardItem>
             </Section>
-            <Section>
+            <Section delay="0.5">
               <CardItem id="cryptoapp" title="Cryptoapp" thumbnail={cryptoApp}>
                 En enkel applikation där man kan söka på samtliga cryptovalutor,
                 skapad med Next.js då jag var nyfiken på skillnaderna mellan

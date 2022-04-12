@@ -88,7 +88,7 @@ const Home = () => (
             </Heading>
             <Paragraph>
               <SimpleGrid
-                columns={[1, 1, 1, 1, 4]}
+                columns={[1, 1, 2, 2, 3]}
                 className="flex  mt-2 justify-around gap-4  items-center"
               >
                 <Badge
@@ -196,10 +196,10 @@ const Home = () => (
         </Section>
         <Divider color="white" mb="6" />
         <Section delay="0.8">
-          <Heading as="h2" fontSize="1.7em" mb="4" className=" opacity-80">
+          <Heading as="h4" fontSize="1.2em" mb="4" className=" opacity-80">
             Intressen
           </Heading>
-          <div className="flex justify-between items-start md:flex-row flex-col">
+          <div className="flex justify-between items-start md:flex-wrap flex-none md:flex-row flex-col">
             <Paragraph>
               Löpning{' '}
               <FaBeer className="inline-block text-orange-orangePrimary" />
