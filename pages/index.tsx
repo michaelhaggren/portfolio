@@ -84,7 +84,7 @@ const Home = () => (
           </Box>
           <Box alignItems="center" my={4}>
             <Heading as="h3" fontSize="1em" fontWeight="bold">
-              Tech-stack
+              Kompetens
             </Heading>
             <Paragraph>
               <SimpleGrid
