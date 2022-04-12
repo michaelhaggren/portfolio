@@ -8,7 +8,7 @@ export const Title = ({ children }: TitleProps) => (
   <Box>
     <NextLink href="/projects" passHref>
       <Link>
-        <Paragraph className=" w-auto  inline-block border-orange-orangePrimary hover:border-b ">
+        <Paragraph className=" w-auto  inline-block y hover:border-b ">
           projects
         </Paragraph>
       </Link>
@@ -18,7 +18,7 @@ export const Title = ({ children }: TitleProps) => (
       <ChevronRightIcon />{' '}
     </span>
     <Heading
-      className="text-orange-orangePrimary opacity-80"
+      className="opacity-80"
       display="inline-block"
       as="h3"
       fontSize={20}

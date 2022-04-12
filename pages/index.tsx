@@ -16,6 +16,7 @@ import { FaBeer } from 'react-icons/fa';
 import { HiChartBar, HiOutlineCode } from 'react-icons/hi';
 import { GiPianoKeys, GiFoodTruck } from 'react-icons/gi';
 import Head from 'next/head';
+import { motion, MotionConfig } from 'framer-motion';
 const Home = () => (
   <Box>
     <Head>
@@ -23,69 +24,66 @@ const Home = () => (
       <meta name="twitter:title" />
       <meta property="og:title" />
     </Head>
+
     <div className="grid place-items-center grid-cols-1">
       <div className="w-2/4 md:w-1/4 sm:w-1/6">
-        <Box borderRadius="xl" mb={6} mt={10} p={3} textAlign="center">
-          en blivande webbutvecklare med rötterna från de halländska trakterna,
-          för närvarande bosatt i{' '}
-          <Box
-            className="inline-block"
-            color={useColorModeValue('#180A0A', '#ffb612')}
-          >
-            <span className="tracking-widest   font-semibold"> Borås</span>
-          </Box>
-        </Box>
-
-        <Box>
-          <Box className="flex sm:flex-row flex-col ">
+        <Section delay="0.2">
+          <Box borderRadius="xl" mb={6} mt={10} p={3} textAlign="center">
+            en blivande webbutvecklare med rötterna från de halländska
+            trakterna, för närvarande bosatt i{' '}
             <Box
-              color={useColorModeValue('#141E27', '#ffb612')}
-              className="flex flex-col md:px-0 px-2"
+              className="inline-block"
+              color={useColorModeValue('#180A0A', '#ffb612')}
             >
-              <Heading
-                className=" tracking-widest flex"
-                as="h1"
-                variant="page-title"
-              >
-                michael haggren
-              </Heading>
-              <p className=" opacity-40 tracking-widest">webbutvecklare</p>
-            </Box>
-            <Box>
-              <Avatar
-                size="2xl"
-                name="Segun Adebayo"
-                src="/images/CVBILD.png"
-              />{' '}
+              <span className="tracking-widest   font-semibold"> Borås</span>
             </Box>
           </Box>
-          <Box
-            flexShrink={0}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 6 }}
-            textAlign="center"
-          ></Box>
-        </Box>
-        <Section>
+
+          <Box>
+            <Box className="flex sm:flex-row flex-col ">
+              <Box
+                color={useColorModeValue('#141E27', '#ffb612')}
+                className="flex flex-col md:px-0 px-2"
+              >
+                <Heading
+                  className=" tracking-widest flex"
+                  as="h1"
+                  variant="page-title"
+                >
+                  michael haggren
+                </Heading>
+                <p className=" opacity-40 tracking-widest">webbutvecklare</p>
+              </Box>
+              <Box>
+                <Avatar
+                  size="2xl"
+                  name="Segun Adebayo"
+                  src="/images/CVBILD.png"
+                />{' '}
+              </Box>
+            </Box>
+            <Box
+              flexShrink={0}
+              mt={{ base: 4, md: 0 }}
+              ml={{ md: 6 }}
+              textAlign="center"
+            ></Box>
+          </Box>
+        </Section>
+        <Section delay="0.4">
           <Heading as="h2" mt={10} fontSize="1.4em" className=" opacity-80">
             Om mig
           </Heading>
 
           <Box alignItems="center" my={4}>
             <Paragraph>
-              En teknikintresserad IT-student som har under studieperioden fått
-              upp ett intresse för programmering, mest fokus på frontend då jag
-              gillar kombinationen med att knacka kod samtidigt som man får
-              designa och lägga fokus på att möta användarens behov.
+              En teknikintresserad student som under studieperioden fått upp ett
+              intresse för programmering, mest fokus på frontend då jag gillar
+              kombinationen med att knacka kod samtidigt som man får designa.
             </Paragraph>
           </Box>
           <Box alignItems="center" my={4}>
-            <Heading
-              className="text-orange-orangePrimary opacity-70"
-              as="h4"
-              fontSize="1em"
-              fontWeight="normal"
-            >
+            <Heading as="h3" fontSize="1em" fontWeight="bold">
               Tech-stack
             </Heading>
             <Paragraph>
@@ -98,25 +96,17 @@ const Home = () => (
                   borderColor={useColorModeValue('#141E27', '#ffb612')}
                   py="2"
                   px="1"
-                  className=" border text-center"
-                  colorScheme="grey"
-                >
-                  Next
-                </Badge>
-                <Badge
-                  border="1px"
-                  borderColor={useColorModeValue('#141E27', '#ffb612')}
-                  py="2"
-                  px="1"
                   className="border text-center"
                   colorScheme="grey"
                 >
-                  C#
+                  .NET/C#
                 </Badge>
                 <Badge
                   py="2"
                   px="1"
-                  className="border-orange-orangePrimary border text-center"
+                  border="1px"
+                  borderColor={useColorModeValue('#141E27', '#ffb612')}
+                  className="border text-center"
                   colorScheme="grey"
                 >
                   Tailwind
@@ -124,7 +114,9 @@ const Home = () => (
                 <Badge
                   py="2"
                   px="1"
-                  className="border-orange-orangePrimary border text-center"
+                  border="1px"
+                  borderColor={useColorModeValue('#141E27', '#ffb612')}
+                  className="border text-center"
                   colorScheme="grey"
                 >
                   SCSS
@@ -132,7 +124,9 @@ const Home = () => (
                 <Badge
                   py="2"
                   px="1"
-                  className="border-orange-orangePrimary border text-center"
+                  border="1px"
+                  borderColor={useColorModeValue('#141E27', '#ffb612')}
+                  className="border text-center"
                   colorScheme="grey"
                 >
                   MSSQL
@@ -140,7 +134,9 @@ const Home = () => (
                 <Badge
                   py="2"
                   px="1"
-                  className="border-orange-orangePrimary border text-center"
+                  border="1px"
+                  borderColor={useColorModeValue('#141E27', '#ffb612')}
+                  className="border text-center"
                   colorScheme="grey"
                 >
                   MongoDB
@@ -148,15 +144,19 @@ const Home = () => (
                 <Badge
                   py="2"
                   px="1"
-                  className="border-orange-orangePrimary border text-center"
+                  border="1px"
+                  borderColor={useColorModeValue('#141E27', '#ffb612')}
+                  className="border text-center"
                   colorScheme="grey"
                 >
-                  React
+                  React/Next
                 </Badge>
                 <Badge
                   py="2"
                   px="1"
-                  className="border-orange-orangePrimary border text-center"
+                  border="1px"
+                  borderColor={useColorModeValue('#141E27', '#ffb612')}
+                  className="border text-center"
                   colorScheme="grey"
                 >
                   Typescript
@@ -164,17 +164,19 @@ const Home = () => (
                 <Badge
                   py="2"
                   px="1"
-                  className="border-orange-orangePrimary border text-center"
+                  border="1px"
+                  borderColor={useColorModeValue('#141E27', '#ffb612')}
+                  className="border text-center"
                   colorScheme="grey"
                 >
-                  Typescript
+                  JAVASCRIPT
                 </Badge>
               </SimpleGrid>
             </Paragraph>
           </Box>
         </Section>
         <Divider />
-        <Section>
+        <Section delay="0.6">
           <Heading as="h2" mt={10} fontSize="1.4em" className=" opacity-80">
             Projekt
           </Heading>
@@ -185,14 +187,15 @@ const Home = () => (
                 rightIcon={<ChevronRightIcon />}
                 bg={useColorModeValue('#141E27', '#ffb612')}
                 color={useColorModeValue('#ffb612', '#141E27')}
+                className="hover:bg-current text-current"
               >
-                Mina projekt
+                Mina Projekt
               </Button>
             </NextLink>
           </Box>
         </Section>
         <Divider color="white" mb="6" />
-        <Section delay="0.4">
+        <Section delay="0.8">
           <Heading as="h2" fontSize="1.7em" mb="4" className=" opacity-80">
             Intressen
           </Heading>

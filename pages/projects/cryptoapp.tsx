@@ -16,9 +16,9 @@ import P from '../../components/Paragraph';
 
 const Project = () => (
   <Container h="full" py={8} px={3}>
-    <ArticleLayout title="Fullstack Bookapp">
+    <ArticleLayout title="Cryptoapp">
       <Title>
-        Fullstack Bookapp <Badge ml={3}>2021</Badge>
+        Cryptoapp <Badge ml={3}>2021</Badge>
       </Title>
       <P>
         En enkel API cryptoapp som skapades för att vidaretuveckla min kunskap
