@@ -212,10 +212,12 @@ const Home = () => (
               Mat{' '}
               <GiFoodTruck className='inline-block text-orange-orangePrimary' />
             </Paragraph>
+
             <Paragraph>
               Piano{' '}
               <GiPianoKeys className='inline-block text-orange-orangePrimary' />
             </Paragraph>
+
             <Paragraph>
               Kodning{' '}
               <HiOutlineCode className='inline-block text-orange-orangePrimary' />
