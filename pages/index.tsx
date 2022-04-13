@@ -12,7 +12,7 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import Section from '../components/Section';
 import Paragraph from '../components/Paragraph';
-import { FaRunning } from 'react-icons/fa';
+import { FaFootballBall, FaRunning } from 'react-icons/fa';
 import { HiChartBar, HiOutlineCode } from 'react-icons/hi';
 import { GiPianoKeys, GiFoodTruck } from 'react-icons/gi';
 import ProfilBild from '../public/images/CVBIld.png';
@@ -212,10 +212,9 @@ const Home = () => (
               Mat{' '}
               <GiFoodTruck className='inline-block text-orange-orangePrimary' />
             </Paragraph>
-
             <Paragraph>
-              Piano{' '}
-              <GiPianoKeys className='inline-block text-orange-orangePrimary' />
+              NFL{' '}
+              <FaFootballBall className='inline-block text-orange-orangePrimary' />
             </Paragraph>
 
             <Paragraph>
