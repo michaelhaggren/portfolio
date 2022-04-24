@@ -23,13 +23,13 @@ export interface HeaderProps {}
 export const Header = ({}: HeaderProps) => {
   const [showMenu, setShowMenu] = useState(false);
   const notify = () =>
-    toast.success('📌 Email kopierad!', {
-      position: 'bottom-center',
-      autoClose: 5000,
+    toast.success('🎇 Email kopierad!', {
+      position: 'top-left',
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
-      draggable: true,
+      draggable: false,
       progress: undefined,
     });
 
