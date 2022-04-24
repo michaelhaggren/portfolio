@@ -1,5 +1,6 @@
 import { Box, Container, useColorModeValue } from '@chakra-ui/react';
 import { useState } from 'react';
+import { ToastContainer } from 'react-toastify';
 import { Footer } from '../Footer/Footer';
 import { Header } from '../Header/Header';
 //* Mobila responsiva buggar sönder efter grid-area, åtgärda
@@ -7,10 +8,9 @@ import { Header } from '../Header/Header';
 export interface LayoutProps {}
 
 export const Layout = ({ children }: React.PropsWithChildren<LayoutProps>) => {
-  const [isActive, setIsActive] = useState(false);
   return (
     <Box
-      as="main"
+      as='main'
       pb={8}
       color={useColorModeValue('#121212', '#F7F5F2')}
       bg={useColorModeValue('#f0e7db', '#121212')}
@@ -18,7 +18,7 @@ export const Layout = ({ children }: React.PropsWithChildren<LayoutProps>) => {
       <header>
         <Header />
       </header>
-      <Container maxW="container.2xl" pt={14}>
+      <Container maxW='container.2xl' pt={14}>
         {children}
 
         <Footer />

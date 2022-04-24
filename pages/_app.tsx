@@ -3,7 +3,8 @@ import type { AppProps } from 'next/app';
 import { Layout } from '../components/Layout/Layout';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import { ChakraProvider } from '@chakra-ui/react';
+import { Box, ChakraProvider, useColorModeValue } from '@chakra-ui/react';
+import { ToastContainer } from 'react-toastify';
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   const route = useRouter();
@@ -11,8 +12,8 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     <ChakraProvider>
       <motion.div
         key={router.route}
-        initial="pageInitial"
-        animate="pageAnimate"
+        initial='pageInitial'
+        animate='pageAnimate'
         transition={{ type: 'spring', duration: 1 }}
         variants={{
           pageInitial: {
@@ -30,6 +31,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         ) : (
           <Component {...pageProps} />
         )}
+        <ToastContainer theme='dark' />
       </motion.div>
     </ChakraProvider>
   );
