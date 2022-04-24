@@ -25,7 +25,7 @@ export const Header = ({}: HeaderProps) => {
   const notify = () =>
     toast.success('🎇 Email kopierad!', {
       position: 'top-left',
-      autoClose: 3000,
+      autoClose: 1500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
