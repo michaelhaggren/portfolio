@@ -177,10 +177,6 @@ const Home = () => (
         </Section>
         <Divider />
         <Section delay='0.6'>
-          <Heading as='h2' mt={10} fontSize='1.4em' className=' opacity-80'>
-            Projekt
-          </Heading>
-
           <Box alignItems='center' my={4}>
             <NextLink href='/projects' scroll={false} passHref>
               <Button
