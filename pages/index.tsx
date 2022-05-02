@@ -195,7 +195,7 @@ const Home = () => (
           <Heading as='h4' fontSize='1.2em' mb='4' className=' opacity-80'>
             Intressen
           </Heading>
-          <div className='flex justify-between items-start md:flex-wrap flex-none md:flex-row flex-col'>
+          <div className='flex gap-2 justify-between items-start md:flex-wrap flex-none md:flex-row flex-col'>
             <Paragraph>
               Löpning{' '}
               <FaRunning className='inline-block text-orange-orangePrimary' />
