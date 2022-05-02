@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           transition={{ type: 'spring', duration: 0.8 }}
           variants={{
             pageInitial: {
-              x: 75,
+              x: 100,
             },
             pageAnimate: {
               x: 0,

@@ -26,7 +26,7 @@ const Home = () => (
     </Head>
 
     <div className='grid place-items-center grid-cols-1'>
-      <div className='w-2/4 md:w-1/4 sm:w-1/6'>
+      <div className='w-2/4 md:w-1/4'>
         <Section delay='0.2'>
           <Box borderRadius='xl' mb={6} mt={10} p={3} textAlign='center'>
             en blivande webbutvecklare med rötterna från de halländska
