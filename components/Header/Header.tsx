@@ -115,7 +115,7 @@ export const Header = ({}: HeaderProps) => {
               <CopyToClipboard text='michael.haggren@gmail.com'>
                 <motion.button
                   whileTap={{ scale: 0.9 }}
-                  className='border-2 hover:border-current rounded mt-4 md:mt-0 text-sm text-left  px-4 py-2 ml-2 md:ml-4 md:mx-2 transition-colors duration-200 '
+                  className='border-2 border-current hover:border-orange-orangePrimary rounded mt-4 md:mt-0 text-sm text-left  px-4 py-2 ml-2 md:ml-4 md:mx-2 transition-colors duration-200 '
                   onClick={() => notify()}
                 >
                   Kontakt
