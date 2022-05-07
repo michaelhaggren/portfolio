@@ -26,13 +26,13 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           key={router.route}
           initial='pageInitial'
           animate='pageAnimate'
-          transition={{ type: 'spring', duration: 0.8 }}
+          transition={{ type: 'spring', duration: 0.6 }}
           variants={{
             pageInitial: {
-              x: 100,
+              y: 150,
             },
             pageAnimate: {
-              x: 0,
+              y: 0,
             },
           }}
         >
