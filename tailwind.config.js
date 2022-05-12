@@ -28,6 +28,7 @@ module.exports = {
         menuSlide: 'fadeIn 500ms ease-in-out',
         menuSlideClose: 'fadeOut 500ms ease-in-out',
         closeSlide: 'opacityFadeIn 200ms ease-in-out',
+        bounceBtn: 'bounceBtn 1s ease-in-out',
       },
 
       keyframes: () => ({
@@ -42,6 +43,11 @@ module.exports = {
         opacityFadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 100 },
+        },
+        bounceBtn: {
+          '0%, 20%, 60%, 100%': { transform: 'translateY(0px)' },
+          '40%': { transform: 'translateY(-30px)' },
+          '80%': { transform: 'translateY(-20px)' },
         },
       }),
     },
