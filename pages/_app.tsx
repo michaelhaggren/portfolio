@@ -22,29 +22,14 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           }
         }}
       >
-        <motion.div
-          key={router.route}
-          initial='pageInitial'
-          animate='pageAnimate'
-          transition={{ type: 'spring', duration: 0.6 }}
-          variants={{
-            pageInitial: {
-              y: 150,
-            },
-            pageAnimate: {
-              y: 0,
-            },
-          }}
-        >
-          {route.pathname !== '/404' ? (
-            <Layout>
-              <Component {...pageProps} key={router.route} />
-            </Layout>
-          ) : (
-            <Component {...pageProps} />
-          )}
-          <ToastContainer theme='dark' />
-        </motion.div>
+        {route.pathname !== '/404' ? (
+          <Layout>
+            <Component {...pageProps} key={router.route} />
+          </Layout>
+        ) : (
+          <Component {...pageProps} />
+        )}
+        <ToastContainer theme='dark' />
       </AnimatePresence>
     </Chakra>
   );
