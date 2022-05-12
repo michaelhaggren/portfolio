@@ -84,7 +84,7 @@ const Home = () => (
           </Box>
           <Box alignItems='center' my={4}>
             <Heading as='h3' fontSize='1em' fontWeight='bold'>
-              Kompetens
+              Tekniker
             </Heading>
             <Paragraph>
               <SimpleGrid
@@ -185,7 +185,7 @@ const Home = () => (
                 color={useColorModeValue('#ffb612', '#141E27')}
                 className='hover:bg-current text-current'
               >
-                Mina Projekt
+                Projekt
               </Button>
             </NextLink>
           </Box>
@@ -214,7 +214,7 @@ const Home = () => (
             </Paragraph>
 
             <Paragraph>
-              Kodning{' '}
+              Programmering{' '}
               <HiOutlineCode className='inline-block text-orange-orangePrimary' />
             </Paragraph>
           </div>
