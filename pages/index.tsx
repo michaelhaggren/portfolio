@@ -29,13 +29,16 @@ const Home = () => (
       <div className='w-2/4 md:w-1/4'>
         <Section delay='0.2'>
           <Box borderRadius='xl' mb={6} mt={10} p={3} textAlign='center'>
-            en blivande webbutvecklare med rötterna från de halländska
-            trakterna, för närvarande bosatt i{' '}
+            en blivande mjukvaruutvecklare på Avanade med rötterna från
+            västkustens bästa stad, Falkenberg. för närvarande bosatt i{' '}
             <Box
               className='inline-block'
               color={useColorModeValue('#180A0A', '#ffb612')}
             >
-              <span className='tracking-widest   font-semibold'> Borås</span>
+              <span className='tracking-widest   font-semibold'>
+                {' '}
+                Stockholm.
+              </span>
             </Box>
           </Box>
 
@@ -71,7 +74,7 @@ const Home = () => (
           </Box>
         </Section>
         <Section delay='0.4'>
-          <Heading as='h2' mt={10} fontSize='1.4em' className=' opacity-80'>
+          <Heading as='h2' mt={10} fontSize='1.4em' className=' opacity-90'>
             Om mig
           </Heading>
 
@@ -83,7 +86,12 @@ const Home = () => (
             </Paragraph>
           </Box>
           <Box alignItems='center' my={4}>
-            <Heading as='h3' fontSize='1em' fontWeight='bold'>
+            <Heading
+              as='h3'
+              fontSize='1em'
+              fontWeight='bold '
+              className='opacity-90'
+            >
               Tekniker
             </Heading>
             <Paragraph>
@@ -181,9 +189,8 @@ const Home = () => (
             <NextLink href='/projects' scroll={false} passHref>
               <Button
                 rightIcon={<ChevronRightIcon />}
-                bg={useColorModeValue('#141E27', '#ffb612')}
-                color={useColorModeValue('#ffb612', '#141E27')}
-                className='hover:bg-current text-current'
+                variant='outline'
+                className=' text-current  bg-orange-orangePrimary'
               >
                 Projekt
               </Button>
@@ -192,7 +199,7 @@ const Home = () => (
         </Section>
         <Divider color='white' mb='6' />
         <Section delay='0.8'>
-          <Heading as='h4' fontSize='1.2em' mb='4' className=' opacity-80'>
+          <Heading as='h4' fontSize='1.2em' mb='4' className=' opacity-90'>
             Intressen
           </Heading>
           <div className='flex gap-2 justify-between items-start md:flex-wrap flex-none md:flex-row flex-col'>
