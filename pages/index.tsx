@@ -80,9 +80,8 @@ const Home = () => (
 
           <Box alignItems='center' my={4}>
             <Paragraph>
-              En teknikintresserad student som under studieperioden fått upp ett
-              intresse för programmering, mest fokus på frontend då jag gillar
-              kombinationen med att knacka kod samtidigt som man får designa.
+              En teknikintresserad hallänning som under studieperioden fått upp
+              ett intresse för programmering.{' '}
             </Paragraph>
           </Box>
           <Box alignItems='center' my={4}>
