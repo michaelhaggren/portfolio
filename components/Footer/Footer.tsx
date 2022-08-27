@@ -14,7 +14,7 @@ export const Footer = ({}: FooterProps) => {
         <a
           target='_blank'
           rel='noreferrer'
-          className=' hover:animate-bounceBtn px-2'
+          className=' px-2'
           href='https://www.linkedin.com/in/michael-haggren-519487198/'
         >
           <FaLinkedin fontSize='40' />
@@ -22,7 +22,7 @@ export const Footer = ({}: FooterProps) => {
         <a
           target='_blank'
           rel='noreferrer'
-          className=' hover:animate-bounceBtn px-2'
+          className=' px-2'
           href='https://github.com/michaelhaggren'
         >
           <FaGithub fontSize='40' />

@@ -29,7 +29,7 @@ const Home = () => (
       <div className='w-2/4 md:w-1/4'>
         <Section delay='0.2'>
           <Box borderRadius='xl' mb={6} mt={10} p={3} textAlign='center'>
-            en blivande mjukvaruutvecklare på Avanade med rötterna från
+            En blivande mjukvaruutvecklare på Avanade med rötterna från
             västkustens bästa stad, Falkenberg. för närvarande bosatt i{' '}
             <Box
               className='inline-block'
@@ -55,7 +55,7 @@ const Home = () => (
                 >
                   michael haggren
                 </Heading>
-                <p className=' opacity-40 tracking-widest'>webbutvecklare</p>
+                <p className=' opacity-40 tracking-widest'>systemutvecklare</p>
               </Box>
               <Box>
                 <Avatar
@@ -80,11 +80,12 @@ const Home = () => (
 
           <Box alignItems='center' my={4}>
             <Paragraph>
-              En teknikintresserad hallänning som under studieperioden fått upp
-              ett intresse för programmering.{' '}
+              Teknikintresserad hallänning som under studieperioden fått upp ett
+              intresse för programmering. Utöver teknikintresset så består
+              vardagen mycket utav träning, kost och aktier.
             </Paragraph>
           </Box>
-          <Box alignItems='center' my={4}>
+          <Box alignItems='center' my={10}>
             <Heading
               as='h3'
               fontSize='1em'
