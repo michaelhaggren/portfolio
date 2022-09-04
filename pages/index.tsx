@@ -29,17 +29,29 @@ const Home = () => (
       <div className='w-2/4 md:w-1/4'>
         <Section delay='0.2'>
           <Box borderRadius='xl' mb={6} mt={10} p={3} textAlign='center'>
-            En blivande mjukvaruutvecklare på Avanade med rötterna från
-            västkustens bästa stad, Falkenberg. för närvarande bosatt i{' '}
+            Full-stack utvecklare på
             <Box
-              className='inline-block'
-              color={useColorModeValue('#180A0A', '#ffb612')}
+              className='inline'
+              color={useColorModeValue('#ffb612', '#ffb612')}
             >
-              <span className='tracking-widest   font-semibold'>
-                {' '}
-                Stockholm.
+              <span className='tracking-widest font-semibold'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://www.avanade.com/se-no'
+                  className='hover:border-b-2 hover:border-orange-orangePrimary '
+                >
+                  {' '}
+                  Avanade{' '}
+                </a>
               </span>
             </Box>
+            med rötterna från{' '}
+            <span className='tracking-widest   font-semibold'>
+              Falkenberg.
+            </span>{' '}
+            För närvarande bosatt i{' '}
+            <span className='tracking-widest   font-semibold'> Stockholm.</span>
           </Box>
 
           <Box>
