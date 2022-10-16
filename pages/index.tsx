@@ -73,7 +73,7 @@ const Home = () => (
                 <Avatar
                   size='2xl'
                   name='Michael Haggren'
-                  src='/images/profilbild.png'
+                  src='/images/profil.png'
                 />{' '}
               </Box>
             </Box>
