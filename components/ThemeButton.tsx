@@ -13,14 +13,14 @@ export const ThemeButton = () => {
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 20, opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="mx-4"
+          className='mx-4'
         >
           <IconButton
-            aria-label="Toggle theme"
-            variant="unstyled"
-            size="sm"
-            bg={useColorModeValue('#141E27', '#f0e7db')}
-            color={useColorModeValue('#f0e7db', '#141E27')}
+            aria-label='Toggle theme'
+            variant='unstyled'
+            size='sm'
+            bg={useColorModeValue('#1B2430', '#FEFCF3')}
+            color={useColorModeValue('#FEFCF3', '#1B2430')}
             icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
             onClick={toggleColorMode}
           ></IconButton>

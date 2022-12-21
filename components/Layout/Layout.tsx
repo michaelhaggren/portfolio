@@ -1,5 +1,6 @@
 import { Box, Container, useColorModeValue } from '@chakra-ui/react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { ToastContainer } from 'react-toastify';
 import { Footer } from '../Footer/Footer';
 import { Header } from '../Header/Header';
@@ -12,8 +13,8 @@ export const Layout = ({ children }: React.PropsWithChildren<LayoutProps>) => {
     <Box
       as='main'
       pb={8}
-      color={useColorModeValue('#121212', '#F7F5F2')}
-      bg={useColorModeValue('#f0e7db', '#121212')}
+      color={useColorModeValue('#1B2430', '#FEFCF3')}
+      bg={useColorModeValue('#FEFCF3', '#1B2430')}
     >
       <header>
         <Header />

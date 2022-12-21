@@ -46,7 +46,7 @@ export const Header = ({}: HeaderProps) => {
   ];
   //! VA I HELVETE HÄNDER MED HORKNAPPEN?
   return (
-    <Container maxW='2xl' bg={useColorModeValue('#f0e7db', '#121212')}>
+    <Container maxW='2xl' bg={useColorModeValue('#FEFCF3', '#1B2430')}>
       <Box className='h-16 px-4 mx-auto md:flex md:items-center'>
         <Box className='flex justify-between items-center'>
           <NextLink href='/' passHref>
@@ -59,7 +59,7 @@ export const Header = ({}: HeaderProps) => {
             >
               <IconButton
                 variant='unstyled'
-                fill={useColorModeValue('#121212', '#ffb612')}
+                fill={useColorModeValue('#1B2430', '#ffb612')}
                 icon={useColorModeValue(<Logga />, <Logga />)}
                 aria-label='Logga'
               >
@@ -80,7 +80,7 @@ export const Header = ({}: HeaderProps) => {
           <Icon boxSize='7' as={HamburgerIcon} />
         </button>
         <Box
-          bg={useColorModeValue('#f0e7db', '#121212')}
+          bg={useColorModeValue('#FEFCF3', '#1B2430')}
           className={`${showMenu ? '' : 'hidden'}
               z-50 animate-menuSlide md:animate-none shadow-xl md:shadow-none fixed md:sticky top-0 right-0 w-9/12 md:w-auto h-screen md:h-auto  md:flex flex-col md:flex-row  md:ml-auto md:mt-0`}
         >

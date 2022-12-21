@@ -86,11 +86,11 @@ const Home = () => (
           </Box>
         </Section>
         <Section delay='0.4'>
-          <Heading as='h2' mt={10} fontSize='1.4em' className=' opacity-90'>
+          <Heading as='h3' mt={10} fontSize='1em' className=' opacity-90'>
             Om mig
           </Heading>
 
-          <Box alignItems='center' my={4}>
+          <Box alignItems='center' my={2}>
             <Paragraph>
               Teknikintresserad hallänning som under studieperioden fått upp ett
               intresse för programmering. Utöver teknikintresset så består
@@ -104,7 +104,7 @@ const Home = () => (
               fontWeight='bold '
               className='opacity-90'
             >
-              Tekniker
+              Tech-stack
             </Heading>
             <Paragraph>
               <SimpleGrid
@@ -113,7 +113,6 @@ const Home = () => (
               >
                 <Badge
                   border='1px'
-                  borderColor={useColorModeValue('#141E27', '#ffb612')}
                   py='2'
                   px='1'
                   className='border text-center'
@@ -125,37 +124,25 @@ const Home = () => (
                   py='2'
                   px='1'
                   border='1px'
-                  borderColor={useColorModeValue('#141E27', '#ffb612')}
                   className='border text-center'
                   colorScheme='grey'
                 >
                   Tailwind
                 </Badge>
+
                 <Badge
                   py='2'
                   px='1'
                   border='1px'
-                  borderColor={useColorModeValue('#141E27', '#ffb612')}
                   className='border text-center'
                   colorScheme='grey'
                 >
-                  SCSS
+                  SQL
                 </Badge>
                 <Badge
                   py='2'
                   px='1'
                   border='1px'
-                  borderColor={useColorModeValue('#141E27', '#ffb612')}
-                  className='border text-center'
-                  colorScheme='grey'
-                >
-                  MSSQL
-                </Badge>
-                <Badge
-                  py='2'
-                  px='1'
-                  border='1px'
-                  borderColor={useColorModeValue('#141E27', '#ffb612')}
                   className='border text-center'
                   colorScheme='grey'
                 >
@@ -165,7 +152,6 @@ const Home = () => (
                   py='2'
                   px='1'
                   border='1px'
-                  borderColor={useColorModeValue('#141E27', '#ffb612')}
                   className='border text-center'
                   colorScheme='grey'
                 >
@@ -175,7 +161,6 @@ const Home = () => (
                   py='2'
                   px='1'
                   border='1px'
-                  borderColor={useColorModeValue('#141E27', '#ffb612')}
                   className='border text-center'
                   colorScheme='grey'
                 >
@@ -185,11 +170,46 @@ const Home = () => (
                   py='2'
                   px='1'
                   border='1px'
-                  borderColor={useColorModeValue('#141E27', '#ffb612')}
                   className='border text-center'
                   colorScheme='grey'
                 >
                   JAVASCRIPT
+                </Badge>
+                <Badge
+                  py='2'
+                  px='1'
+                  border='1px'
+                  className='border text-center'
+                  colorScheme='grey'
+                >
+                  azure devops
+                </Badge>
+                <Badge
+                  py='2'
+                  px='1'
+                  border='1px'
+                  className='border text-center'
+                  colorScheme='grey'
+                >
+                  Service Bus Explorer
+                </Badge>
+                <Badge
+                  py='2'
+                  px='1'
+                  border='1px'
+                  className='border text-center'
+                  colorScheme='grey'
+                >
+                  Git
+                </Badge>
+                <Badge
+                  py='2'
+                  px='1'
+                  border='1px'
+                  className='border text-center'
+                  colorScheme='grey'
+                >
+                  Azure
                 </Badge>
               </SimpleGrid>
             </Paragraph>

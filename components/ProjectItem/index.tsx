@@ -6,9 +6,9 @@ import Paragraph from '../Paragraph';
 
 export const Title = ({ children }: TitleProps) => (
   <Box>
-    <NextLink href="/projects" passHref>
+    <NextLink href='/projects' passHref>
       <Link>
-        <Paragraph className=" w-auto  inline-block y hover:border-b ">
+        <Paragraph className=' w-auto  inline-block y hover:border-b '>
           Projekt
         </Paragraph>
       </Link>
@@ -18,10 +18,10 @@ export const Title = ({ children }: TitleProps) => (
       <ChevronRightIcon />{' '}
     </span>
     <Heading
-      className="opacity-80"
-      display="inline-block"
-      as="h3"
-      fontSize={20}
+      className='opacity-80'
+      display='inline-block'
+      as='h3'
+      fontSize={16}
       mb={4}
     >
       {children}
@@ -30,11 +30,11 @@ export const Title = ({ children }: TitleProps) => (
 );
 
 export const WorkImage = ({ src, alt }: WorkImageProps) => (
-  <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
+  <Image borderRadius='lg' w='full' src={src} alt={alt} mb={4} />
 );
 
 export const Meta = ({ children }: MetaProps) => (
-  <Badge colorScheme="whatsapp" mr={2}>
+  <Badge colorScheme='whatsapp' mr={2}>
     {children}
   </Badge>
 );
