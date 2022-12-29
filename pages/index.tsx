@@ -108,7 +108,7 @@ const Home = () => (
             </Heading>
             <Paragraph>
               <SimpleGrid
-                columns={[1, 1, 2, 2, 3]}
+                columns={[1, 1, 2]}
                 className='flex  mt-2 justify-around gap-4  items-center'
               >
                 <Badge
