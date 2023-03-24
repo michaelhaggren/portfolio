@@ -1,0 +1,26 @@
+.banner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #f9d6c1;
+  overflow: hidden;
+}
+
+.banner p {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  white-space: nowrap;
+  animation: float-message 10s linear infinite;
+}
+
+@keyframes float-message {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -100%;
+  }
+}

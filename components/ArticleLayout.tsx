@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import Head from 'next/head';
-import { ArticleLayoutProps } from '../constants';
-import { CardItemStyle } from './Card';
+import { motion, AnimatePresence } from "framer-motion";
+import Head from "next/head";
+import { ArticleLayoutProps } from "../constants";
+import { CardItemStyle } from "./Card";
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
   enter: { opacity: 1, x: 0, y: 0 },
@@ -15,7 +15,7 @@ const ArticleLayout = ({ children, title }: ArticleLayoutProps) => (
     animate="enter"
     exit="exit"
     variants={variants}
-    transition={{ duration: 0.4, type: 'easeInOut' }}
+    transition={{ duration: 0.4, type: "easeInOut" }}
   >
     <>
       {title && (
