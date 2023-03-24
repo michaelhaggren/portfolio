@@ -4,17 +4,17 @@ import {
   LinkBox,
   LinkOverlay,
   useColorModeValue,
-} from '@chakra-ui/react';
-import { Global } from '@emotion/react';
+} from "@chakra-ui/react";
+import { Global } from "@emotion/react";
 
-import NextLink from 'next/link';
-import Image from 'next/image';
-import { CardItemProps, CardProps } from '../constants';
+import NextLink from "next/link";
+import Image from "next/image";
+import { CardItemProps, CardProps } from "../constants";
 
 export const Card = ({ children, title, href, thumbnail }: CardProps) => {
   return (
     <div>
-      {' '}
+      {" "}
       <Box w="100%" textAlign="center">
         <LinkBox cursor="pointer">
           <Image

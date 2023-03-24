@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import StaticImageData from "next";
+import { StaticImageData } from "../global";
 
 export interface CardProps {
   title: string;
