@@ -1,6 +1,6 @@
 import NextLink from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect, RefObject } from 'react';
 import Logga from '/icons/Logga.svg';
 import { MdSettings } from 'react-icons/md';
 import {
@@ -21,7 +21,34 @@ import 'react-toastify/dist/ReactToastify.min.css';
 export interface HeaderProps {}
 
 export const Header = ({}: HeaderProps) => {
+  const menuRef = useRef<HTMLDivElement>(null);
   const [showMenu, setShowMenu] = useState(false);
+  const handleClickOutside = (
+    event: MouseEvent,
+    menuRef: RefObject<HTMLElement>
+  ) => {
+    // Close the menu if the click is outside of the menu
+    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      setShowMenu(false);
+    }
+  };
+  useEffect(() => {
+    const handleClick = (event: MouseEvent) => {
+      handleClickOutside(event, menuRef);
+    };
+
+    document.addEventListener(
+      'mousedown',
+      handleClick as unknown as EventListener
+    );
+
+    return () => {
+      document.removeEventListener(
+        'mousedown',
+        handleClick as unknown as EventListener
+      );
+    };
+  }, [menuRef]);
   const notify = () =>
     toast.success('🎇 Email kopierad!', {
       position: 'top-left',
@@ -44,7 +71,6 @@ export const Header = ({}: HeaderProps) => {
       route: '/projects',
     },
   ];
-  //! VA I HELVETE HÄNDER MED HORKNAPPEN?
   return (
     <Container maxW='2xl' bg={useColorModeValue('#FEFCF3', '#1B2430')}>
       <Box className='h-16 px-4 mx-auto md:flex md:items-center'>
@@ -81,6 +107,7 @@ export const Header = ({}: HeaderProps) => {
         </button>
         <Box
           bg={useColorModeValue('#FEFCF3', '#1B2430')}
+          ref={menuRef}
           className={`${showMenu ? '' : 'hidden'}
               z-50 animate-menuSlide md:animate-none shadow-xl md:shadow-none fixed md:sticky top-0 right-0 w-9/12 md:w-auto h-screen md:h-auto  md:flex flex-col md:flex-row  md:ml-auto md:mt-0`}
         >
