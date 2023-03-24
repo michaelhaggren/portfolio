@@ -211,15 +211,7 @@ const Home = () => (
                 >
                   Azure
                 </Badge>
-                <Badge
-                  py='2'
-                  px='1'
-                  border='1px'
-                  className='border text-center'
-                  colorScheme='grey'
-                >
-                  Azure
-                </Badge>
+
                 <Badge
                   py='2'
                   px='1'
