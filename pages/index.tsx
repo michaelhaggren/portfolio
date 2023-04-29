@@ -202,6 +202,25 @@ const Home = () => (
                 >
                   Azure
                 </Badge>
+
+                <Badge
+                  py="2"
+                  px="1"
+                  border="1px"
+                  className="border text-center"
+                  colorScheme="grey"
+                >
+                  bicep
+                </Badge>
+                <Badge
+                  py="2"
+                  px="1"
+                  border="1px"
+                  className="border text-center"
+                  colorScheme="grey"
+                >
+                  markdown
+                </Badge>
                 <Badge
                   py="2"
                   px="1"
