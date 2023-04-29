@@ -137,16 +137,7 @@ const Home = () => (
                   className='border text-center'
                   colorScheme='grey'
                 >
-                  SQL
-                </Badge>
-                <Badge
-                  py='2'
-                  px='1'
-                  border='1px'
-                  className='border text-center'
-                  colorScheme='grey'
-                >
-                  MongoDB
+                  MSSQL
                 </Badge>
                 <Badge
                   py='2'
@@ -210,6 +201,15 @@ const Home = () => (
                   colorScheme='grey'
                 >
                   Azure
+                </Badge>
+                <Badge
+                  py='2'
+                  px='1'
+                  border='1px'
+                  className='border text-center'
+                  colorScheme='grey'
+                >
+                  YAML
                 </Badge>
               </SimpleGrid>
             </Paragraph>

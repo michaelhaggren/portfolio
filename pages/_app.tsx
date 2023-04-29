@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         ) : (
           <Component {...pageProps} />
         )}
-        <ToastContainer theme='dark' />
+        <ToastContainer theme="dark" />
       </AnimatePresence>
     </Chakra>
   );
