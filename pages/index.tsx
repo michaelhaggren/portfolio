@@ -14,6 +14,7 @@ import Section from '../components/Section';
 import Paragraph from '../components/Paragraph';
 import { FaFootballBall, FaRunning } from 'react-icons/fa';
 import { HiChartBar, HiOutlineCode } from 'react-icons/hi';
+import { BsMusicPlayer } from 'react-icons/Bs';
 import { GiPianoKeys, GiFoodTruck } from 'react-icons/gi';
 import ProfilBild from '../public/images/CVBIld.png';
 import Head from 'next/head';
@@ -29,7 +30,7 @@ const Home = () => (
       <div className="w-2/4 md:w-1/4">
         <Section delay="0.2">
           <Box borderRadius="xl" mb={6} mt={10} p={3} textAlign="center">
-            Full-stack utvecklare på
+            Backend utvecklare på
             <Box
               className="inline"
               color={useColorModeValue('#ffb612', '#ffb612')}
@@ -92,9 +93,9 @@ const Home = () => (
 
           <Box alignItems="center" my={2}>
             <Paragraph>
-              Teknikintresserad hallänning som under studieperioden fått upp ett
-              intresse för programmering. Utöver teknikintresset så består
-              vardagen mycket utav träning, kost och aktier.
+              Teknikintresserad hallänning som gillar att löpa och vandra i
+              Nackareservatet, följa aktiemarknaden och lägger även skrämmande
+              mycket tid på att hitta ny musik på Spotify/Youtube.
             </Paragraph>
           </Box>
           <Box alignItems="center" my={10}>
@@ -104,32 +105,22 @@ const Home = () => (
               fontWeight="bold "
               className="opacity-90"
             >
-              Tech-stack
+              Main-stack
             </Heading>
             <Paragraph>
               <SimpleGrid
-                columns={[1, 1, 2]}
+                columns={[2]}
                 className="flex  mt-2 justify-around gap-4  items-center"
               >
                 <Badge
                   border="1px"
                   py="2"
                   px="1"
-                  className="border text-center"
+                  className="border text-center w-auto"
                   colorScheme="grey"
                 >
                   .NET/C#
                 </Badge>
-                <Badge
-                  py="2"
-                  px="1"
-                  border="1px"
-                  className="border text-center"
-                  colorScheme="grey"
-                >
-                  Tailwind
-                </Badge>
-
                 <Badge
                   py="2"
                   px="1"
@@ -146,43 +137,7 @@ const Home = () => (
                   className="border text-center"
                   colorScheme="grey"
                 >
-                  React/Next
-                </Badge>
-                <Badge
-                  py="2"
-                  px="1"
-                  border="1px"
-                  className="border text-center"
-                  colorScheme="grey"
-                >
-                  Typescript
-                </Badge>
-                <Badge
-                  py="2"
-                  px="1"
-                  border="1px"
-                  className="border text-center"
-                  colorScheme="grey"
-                >
-                  JAVASCRIPT
-                </Badge>
-                <Badge
-                  py="2"
-                  px="1"
-                  border="1px"
-                  className="border text-center"
-                  colorScheme="grey"
-                >
                   azure devops
-                </Badge>
-                <Badge
-                  py="2"
-                  px="1"
-                  border="1px"
-                  className="border text-center"
-                  colorScheme="grey"
-                >
-                  Service Bus Explorer
                 </Badge>
                 <Badge
                   py="2"
@@ -219,7 +174,33 @@ const Home = () => (
                   className="border text-center"
                   colorScheme="grey"
                 >
-                  markdown
+                  YAML
+                </Badge>
+              </SimpleGrid>
+            </Paragraph>
+            <Heading
+              as="h3"
+              fontSize="1em"
+              marginTop={4}
+              fontWeight="bold "
+              className="opacity-90"
+            >
+              Sub-stack
+            </Heading>
+            <Paragraph>
+              <SimpleGrid
+                gap={3}
+                columns={[2]}
+                className="flex  mt-2 justify-around gap-4  items-center"
+              >
+                <Badge
+                  py="2"
+                  px="1"
+                  border="1px"
+                  className="border text-center"
+                  colorScheme="grey"
+                >
+                  Tailwind
                 </Badge>
                 <Badge
                   py="2"
@@ -228,7 +209,35 @@ const Home = () => (
                   className="border text-center"
                   colorScheme="grey"
                 >
-                  YAML
+                  React/Next
+                </Badge>
+                <Badge
+                  py="2"
+                  px="1"
+                  border="1px"
+                  className="border text-center"
+                  colorScheme="grey"
+                >
+                  Typescript
+                </Badge>
+                <Badge
+                  py="2"
+                  px="1"
+                  border="1px"
+                  className="border text-center"
+                  colorScheme="grey"
+                >
+                  JAVASCRIPT
+                </Badge>
+
+                <Badge
+                  py="2"
+                  px="1"
+                  border="1px"
+                  className="border text-center"
+                  colorScheme="grey"
+                >
+                  markdown
                 </Badge>
               </SimpleGrid>
             </Paragraph>
@@ -267,8 +276,8 @@ const Home = () => (
               <GiFoodTruck className="inline-block text-orange-orangePrimary" />
             </Paragraph>
             <Paragraph>
-              NFL{' '}
-              <FaFootballBall className="inline-block text-orange-orangePrimary" />
+              Musik{' '}
+              <BsMusicPlayer className="inline-block text-orange-orangePrimary" />
             </Paragraph>
 
             <Paragraph>
