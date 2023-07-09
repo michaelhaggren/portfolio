@@ -12,10 +12,10 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import Section from '../components/Section';
 import Paragraph from '../components/Paragraph';
-import { FaFootballBall, FaRunning } from 'react-icons/fa';
+import { FaRunning } from 'react-icons/fa';
 import { HiChartBar, HiOutlineCode } from 'react-icons/hi';
-import { BsMusicPlayer } from 'react-icons/Bs';
-import { GiPianoKeys, GiFoodTruck } from 'react-icons/gi';
+import { BsMusicPlayer } from 'react-icons/bs';
+import { GiFoodTruck } from 'react-icons/gi';
 import ProfilBild from '../public/images/CVBIld.png';
 import Head from 'next/head';
 const Home = () => (
